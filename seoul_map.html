@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_e66c4960bc1d4e8d9b5fea04492073ef {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_e66c4960bc1d4e8d9b5fea04492073ef" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_e66c4960bc1d4e8d9b5fea04492073ef = L.map(
+                                  'map_e66c4960bc1d4e8d9b5fea04492073ef',
+                                  {center: [37.5666791,126.9782914],
+                                  zoom: 11,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_679c12a0543c47558accf6930f4370e7 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_e66c4960bc1d4e8d9b5fea04492073ef);
+        
+    
+            var circle_marker_498b8be4af4944afb0f7a21a3702ffc5 = L.circleMarker(
+                [37.61846000000003,126.92780000000005],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_e66c4960bc1d4e8d9b5fea04492073ef);
+            
+    
+            var popup_93eef66efa884db8b46b3a64a623e7d3 = L.popup({maxWidth: '300'});
+
+            
+                var html_ddeaece165f24cd78a9e7624ef9e0144 = $('<div id="html_ddeaece165f24cd78a9e7624ef9e0144" style="width: 100.0%; height: 100.0%;">►  Dobong District‎ (3 C, 4 P)</div>')[0];
+                popup_93eef66efa884db8b46b3a64a623e7d3.setContent(html_ddeaece165f24cd78a9e7624ef9e0144);
+            
+
+            circle_marker_498b8be4af4944afb0f7a21a3702ffc5.bindPopup(popup_93eef66efa884db8b46b3a64a623e7d3);
+
+            
+        
+    
+            var circle_marker_0f8a00bd33f64f95bb31d17cebf8f0fb = L.circleMarker(
+                [37.509089986158166,127.01226885653118],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_e66c4960bc1d4e8d9b5fea04492073ef);
+            
+    
+            var popup_0e69ddb1f341448eb6bf120a7dbcb377 = L.popup({maxWidth: '300'});
+
+            
+                var html_1e1a28ba43934d2eb428d5b68367e93c = $('<div id="html_1e1a28ba43934d2eb428d5b68367e93c" style="width: 100.0%; height: 100.0%;">►  Dongdaemun District‎ (3 C, 6 P)</div>')[0];
+                popup_0e69ddb1f341448eb6bf120a7dbcb377.setContent(html_1e1a28ba43934d2eb428d5b68367e93c);
+            
+
+            circle_marker_0f8a00bd33f64f95bb31d17cebf8f0fb.bindPopup(popup_0e69ddb1f341448eb6bf120a7dbcb377);
+
+            
+        
+    
+            var circle_marker_6339ec33449f48f7a0011b0da6ea50a4 = L.circleMarker(
+                [37.55039000000005,127.14546000000007],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_e66c4960bc1d4e8d9b5fea04492073ef);
+            
+    
+            var popup_12cbb66b56bd457183aff163c171bee3 = L.popup({maxWidth: '300'});
+
+            
+                var html_c784c66f62c44f43994954c8ddbc91db = $('<div id="html_c784c66f62c44f43994954c8ddbc91db" style="width: 100.0%; height: 100.0%;">►  Dongjak District‎ (3 C, 4 P)</div>')[0];
+                popup_12cbb66b56bd457183aff163c171bee3.setContent(html_c784c66f62c44f43994954c8ddbc91db);
+            
+
+            circle_marker_6339ec33449f48f7a0011b0da6ea50a4.bindPopup(popup_12cbb66b56bd457183aff163c171bee3);
+
+            
+        
+    
+            var circle_marker_3398459c70b74f6c96c0319f52add36e = L.circleMarker(
+                [37.495100000000036,127.06278000000009],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_e66c4960bc1d4e8d9b5fea04492073ef);
+            
+    
+            var popup_d377e2799a9641c9bf3f7f00493d7956 = L.popup({maxWidth: '300'});
+
+            
+                var html_619be8d8f0db4b01a45eb3bb05f67013 = $('<div id="html_619be8d8f0db4b01a45eb3bb05f67013" style="width: 100.0%; height: 100.0%;">►  Eunpyeong District‎ (2 C, 2 P)</div>')[0];
+                popup_d377e2799a9641c9bf3f7f00493d7956.setContent(html_619be8d8f0db4b01a45eb3bb05f67013);
+            
+
+            circle_marker_3398459c70b74f6c96c0319f52add36e.bindPopup(popup_d377e2799a9641c9bf3f7f00493d7956);
+
+            
+        
+    
+            var circle_marker_9a64046220104c87a80fef48a07b9121 = L.circleMarker(
+                [37.568260000000066,126.97783000000004],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_e66c4960bc1d4e8d9b5fea04492073ef);
+            
+    
+            var popup_703af19d0ffd4cdd85852315072bcab7 = L.popup({maxWidth: '300'});
+
+            
+                var html_2c549175de4f4d229715394388e57b25 = $('<div id="html_2c549175de4f4d229715394388e57b25" style="width: 100.0%; height: 100.0%;">►  Gangbuk District‎ (3 C, 1 P)</div>')[0];
+                popup_703af19d0ffd4cdd85852315072bcab7.setContent(html_2c549175de4f4d229715394388e57b25);
+            
+
+            circle_marker_9a64046220104c87a80fef48a07b9121.bindPopup(popup_703af19d0ffd4cdd85852315072bcab7);
+
+            
+        
+    
+            var circle_marker_062a4db2f2ef4ed7957670956aa4614a = L.circleMarker(
+                [37.474860000000035,126.89106000000004],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_e66c4960bc1d4e8d9b5fea04492073ef);
+            
+    
+            var popup_c4ae46c5e76846859e2ed4faed41be0f = L.popup({maxWidth: '300'});
+
+            
+                var html_ae2face386064706b2d90775fbe6b227 = $('<div id="html_ae2face386064706b2d90775fbe6b227" style="width: 100.0%; height: 100.0%;">►  Gangdong District‎ (3 C, 5 P)</div>')[0];
+                popup_c4ae46c5e76846859e2ed4faed41be0f.setContent(html_ae2face386064706b2d90775fbe6b227);
+            
+
+            circle_marker_062a4db2f2ef4ed7957670956aa4614a.bindPopup(popup_c4ae46c5e76846859e2ed4faed41be0f);
+
+            
+        
+    
+            var circle_marker_b461d0e51a5246c7b8daf95b2f87696f = L.circleMarker(
+                [37.568260000000066,126.97783000000004],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_e66c4960bc1d4e8d9b5fea04492073ef);
+            
+    
+            var popup_eb6f8ef82f374081803e2bfcb068ae3d = L.popup({maxWidth: '300'});
+
+            
+                var html_b88f80c3db9248a29ad4cd26729c0bbc = $('<div id="html_b88f80c3db9248a29ad4cd26729c0bbc" style="width: 100.0%; height: 100.0%;">►  Gangnam District‎ (3 C, 17 P)</div>')[0];
+                popup_eb6f8ef82f374081803e2bfcb068ae3d.setContent(html_b88f80c3db9248a29ad4cd26729c0bbc);
+            
+
+            circle_marker_b461d0e51a5246c7b8daf95b2f87696f.bindPopup(popup_eb6f8ef82f374081803e2bfcb068ae3d);
+
+            
+        
+    
+            var circle_marker_06d751778f08407189b28aaf9fa9cfd9 = L.circleMarker(
+                [37.568260000000066,126.97783000000004],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_e66c4960bc1d4e8d9b5fea04492073ef);
+            
+    
+            var popup_d7101e6505ab4107b47ca16578fc8315 = L.popup({maxWidth: '300'});
+
+            
+                var html_302f70941d364212899fea1dd37cdcd8 = $('<div id="html_302f70941d364212899fea1dd37cdcd8" style="width: 100.0%; height: 100.0%;">►  Gangseo District, Seoul‎ (3 C, 2 P)</div>')[0];
+                popup_d7101e6505ab4107b47ca16578fc8315.setContent(html_302f70941d364212899fea1dd37cdcd8);
+            
+
+            circle_marker_06d751778f08407189b28aaf9fa9cfd9.bindPopup(popup_d7101e6505ab4107b47ca16578fc8315);
+
+            
+        
+    
+            var circle_marker_3c58d231dfe843f0a986de18812c3fcd = L.circleMarker(
+                [37.53913000000006,127.08366000000001],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_e66c4960bc1d4e8d9b5fea04492073ef);
+            
+    
+            var popup_46b786f2a17e4924afa530e28016846d = L.popup({maxWidth: '300'});
+
+            
+                var html_2c978109dd62455bba9b0a4613cbdafb = $('<div id="html_2c978109dd62455bba9b0a4613cbdafb" style="width: 100.0%; height: 100.0%;">►  Geumcheon District‎ (3 C, 4 P)</div>')[0];
+                popup_46b786f2a17e4924afa530e28016846d.setContent(html_2c978109dd62455bba9b0a4613cbdafb);
+            
+
+            circle_marker_3c58d231dfe843f0a986de18812c3fcd.bindPopup(popup_46b786f2a17e4924afa530e28016846d);
+
+            
+        
+    
+            var circle_marker_2ebda40d071e4ce6a9819737cb87d985 = L.circleMarker(
+                [37.568260000000066,126.97783000000004],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_e66c4960bc1d4e8d9b5fea04492073ef);
+            
+    
+            var popup_a92bcc42c7824519a94c97effcb8d2bf = L.popup({maxWidth: '300'});
+
+            
+                var html_c6555e7cd0f74bd8911deeaca26d2b04 = $('<div id="html_c6555e7cd0f74bd8911deeaca26d2b04" style="width: 100.0%; height: 100.0%;">►  Guro District, Seoul‎ (3 C, 8 P)</div>')[0];
+                popup_a92bcc42c7824519a94c97effcb8d2bf.setContent(html_c6555e7cd0f74bd8911deeaca26d2b04);
+            
+
+            circle_marker_2ebda40d071e4ce6a9819737cb87d985.bindPopup(popup_a92bcc42c7824519a94c97effcb8d2bf);
+
+            
+        
+    
+            var circle_marker_f8e0f4e9bac443fe99934dbf2e86deb9 = L.circleMarker(
+                [37.568260000000066,126.97783000000004],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_e66c4960bc1d4e8d9b5fea04492073ef);
+            
+    
+            var popup_8c0b043e3b6e44438635500d32ea1bfd = L.popup({maxWidth: '300'});
+
+            
+                var html_37fd97bdb772445ea980f28a18c095e9 = $('<div id="html_37fd97bdb772445ea980f28a18c095e9" style="width: 100.0%; height: 100.0%;">►  Gwanak District‎ (4 C, 8 P)</div>')[0];
+                popup_8c0b043e3b6e44438635500d32ea1bfd.setContent(html_37fd97bdb772445ea980f28a18c095e9);
+            
+
+            circle_marker_f8e0f4e9bac443fe99934dbf2e86deb9.bindPopup(popup_8c0b043e3b6e44438635500d32ea1bfd);
+
+            
+        
+    
+            var circle_marker_a287eff6895b4b0aaa8f1085abedaf20 = L.circleMarker(
+                [37.60199000000006,127.1046100000001],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_e66c4960bc1d4e8d9b5fea04492073ef);
+            
+    
+            var popup_609e883e70424db9800810fbac548782 = L.popup({maxWidth: '300'});
+
+            
+                var html_9acb98d8658e4663af3f9f76d6d7fc31 = $('<div id="html_9acb98d8658e4663af3f9f76d6d7fc31" style="width: 100.0%; height: 100.0%;">►  Gwangjin District‎ (3 C, 8 P)</div>')[0];
+                popup_609e883e70424db9800810fbac548782.setContent(html_9acb98d8658e4663af3f9f76d6d7fc31);
+            
+
+            circle_marker_a287eff6895b4b0aaa8f1085abedaf20.bindPopup(popup_609e883e70424db9800810fbac548782);
+
+            
+        
+    
+            var circle_marker_28e089153a4042fcba0b72e7afc2fa94 = L.circleMarker(
+                [37.568260000000066,126.97783000000004],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_e66c4960bc1d4e8d9b5fea04492073ef);
+            
+    
+            var popup_bac93c5535c64b4fbd3f1308cdc4795c = L.popup({maxWidth: '300'});
+
+            
+                var html_27027d414fea4a40888bc656c9a5017a = $('<div id="html_27027d414fea4a40888bc656c9a5017a" style="width: 100.0%; height: 100.0%;">►  Jongno District‎ (3 C, 64 P, 2 F)</div>')[0];
+                popup_bac93c5535c64b4fbd3f1308cdc4795c.setContent(html_27027d414fea4a40888bc656c9a5017a);
+            
+
+            circle_marker_28e089153a4042fcba0b72e7afc2fa94.bindPopup(popup_bac93c5535c64b4fbd3f1308cdc4795c);
+
+            
+        
+    
+            var circle_marker_e5badd12ec1d4d9f9cdd908e77e78b80 = L.circleMarker(
+                [37.568260000000066,126.97783000000004],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_e66c4960bc1d4e8d9b5fea04492073ef);
+            
+    
+            var popup_844a79d9a36b4a58a1b4023b6f25d8ab = L.popup({maxWidth: '300'});
+
+            
+                var html_d643c42166bb4365b90a7ff43e24dd24 = $('<div id="html_d643c42166bb4365b90a7ff43e24dd24" style="width: 100.0%; height: 100.0%;">►  Jung District, Seoul‎ (3 C, 27 P)</div>')[0];
+                popup_844a79d9a36b4a58a1b4023b6f25d8ab.setContent(html_d643c42166bb4365b90a7ff43e24dd24);
+            
+
+            circle_marker_e5badd12ec1d4d9f9cdd908e77e78b80.bindPopup(popup_844a79d9a36b4a58a1b4023b6f25d8ab);
+
+            
+        
+    
+            var circle_marker_7574cafbaa5a48138595401f36f70f4a = L.circleMarker(
+                [37.49056000000007,127.0200000000001],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_e66c4960bc1d4e8d9b5fea04492073ef);
+            
+    
+            var popup_c0739f5ec6e94f36a74d4ac85e1a0a78 = L.popup({maxWidth: '300'});
+
+            
+                var html_ba405f5372c1413ab6821a7c194274d1 = $('<div id="html_ba405f5372c1413ab6821a7c194274d1" style="width: 100.0%; height: 100.0%;">►  Jungnang District‎ (3 C, 3 P)</div>')[0];
+                popup_c0739f5ec6e94f36a74d4ac85e1a0a78.setContent(html_ba405f5372c1413ab6821a7c194274d1);
+            
+
+            circle_marker_7574cafbaa5a48138595401f36f70f4a.bindPopup(popup_c0739f5ec6e94f36a74d4ac85e1a0a78);
+
+            
+        
+    
+            var circle_marker_134922a9055f442eb60b1d62ef8ce26b = L.circleMarker(
+                [37.568260000000066,126.97783000000004],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_e66c4960bc1d4e8d9b5fea04492073ef);
+            
+    
+            var popup_72d44cd9750f46c493e53852c4e89f9e = L.popup({maxWidth: '300'});
+
+            
+                var html_39415994619d4a8183f3fec0f5eade7a = $('<div id="html_39415994619d4a8183f3fec0f5eade7a" style="width: 100.0%; height: 100.0%;">►  Mapo District‎ (5 C, 8 P)</div>')[0];
+                popup_72d44cd9750f46c493e53852c4e89f9e.setContent(html_39415994619d4a8183f3fec0f5eade7a);
+            
+
+            circle_marker_134922a9055f442eb60b1d62ef8ce26b.bindPopup(popup_72d44cd9750f46c493e53852c4e89f9e);
+
+            
+        
+    
+            var circle_marker_732518ab87b340678558ebaa6bd836bf = L.circleMarker(
+                [37.61505000000005,127.02496000000008],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_e66c4960bc1d4e8d9b5fea04492073ef);
+            
+    
+            var popup_80983af7089d4a0f806867921d1bdb73 = L.popup({maxWidth: '300'});
+
+            
+                var html_21f52b59f64b45c68120e2ddbfef615f = $('<div id="html_21f52b59f64b45c68120e2ddbfef615f" style="width: 100.0%; height: 100.0%;">►  Nowon District‎ (3 C, 6 P)</div>')[0];
+                popup_80983af7089d4a0f806867921d1bdb73.setContent(html_21f52b59f64b45c68120e2ddbfef615f);
+            
+
+            circle_marker_732518ab87b340678558ebaa6bd836bf.bindPopup(popup_80983af7089d4a0f806867921d1bdb73);
+
+            
+        
+    
+            var circle_marker_cacdb398515d4eef8810982f9c96706c = L.circleMarker(
+                [37.547840000000065,127.02461000000005],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_e66c4960bc1d4e8d9b5fea04492073ef);
+            
+    
+            var popup_0370281630ce452a99dc03d5f1ac0975 = L.popup({maxWidth: '300'});
+
+            
+                var html_02a3ccbe2cc74267a52905a256b8ab75 = $('<div id="html_02a3ccbe2cc74267a52905a256b8ab75" style="width: 100.0%; height: 100.0%;">►  Seocho District‎ (3 C, 13 P)</div>')[0];
+                popup_0370281630ce452a99dc03d5f1ac0975.setContent(html_02a3ccbe2cc74267a52905a256b8ab75);
+            
+
+            circle_marker_cacdb398515d4eef8810982f9c96706c.bindPopup(popup_0370281630ce452a99dc03d5f1ac0975);
+
+            
+        
+    
+            var circle_marker_966a211f844747a39ff87aeb657547fa = L.circleMarker(
+                [37.568260000000066,126.97783000000004],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_e66c4960bc1d4e8d9b5fea04492073ef);
+            
+    
+            var popup_416d20d8c27d47979e44ad3afcf6ec3f = L.popup({maxWidth: '300'});
+
+            
+                var html_8b76e9304d794d23a310625f577c8ac6 = $('<div id="html_8b76e9304d794d23a310625f577c8ac6" style="width: 100.0%; height: 100.0%;">►  Seodaemun District‎ (4 C, 18 P)</div>')[0];
+                popup_416d20d8c27d47979e44ad3afcf6ec3f.setContent(html_8b76e9304d794d23a310625f577c8ac6);
+            
+
+            circle_marker_966a211f844747a39ff87aeb657547fa.bindPopup(popup_416d20d8c27d47979e44ad3afcf6ec3f);
+
+            
+        
+    
+            var circle_marker_e5f44f7ea86042d98adba10c809ec931 = L.circleMarker(
+                [37.53532000000007,126.84334000000001],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_e66c4960bc1d4e8d9b5fea04492073ef);
+            
+    
+            var popup_cd78e698ea9d497eaea03192eef2c943 = L.popup({maxWidth: '300'});
+
+            
+                var html_821f7da7bdac453c9c05607e4c94ad1a = $('<div id="html_821f7da7bdac453c9c05607e4c94ad1a" style="width: 100.0%; height: 100.0%;">►  Seongbuk District‎ (4 C, 7 P)</div>')[0];
+                popup_cd78e698ea9d497eaea03192eef2c943.setContent(html_821f7da7bdac453c9c05607e4c94ad1a);
+            
+
+            circle_marker_e5f44f7ea86042d98adba10c809ec931.bindPopup(popup_cd78e698ea9d497eaea03192eef2c943);
+
+            
+        
+    
+            var circle_marker_14ab445d0f06461fa03c8f75d15cf215 = L.circleMarker(
+                [37.568260000000066,126.97783000000004],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_e66c4960bc1d4e8d9b5fea04492073ef);
+            
+    
+            var popup_a69b55b724e64bcd99feb62b6d5e1e32 = L.popup({maxWidth: '300'});
+
+            
+                var html_9fbf390971c246fbaa3db43dbd290ff7 = $('<div id="html_9fbf390971c246fbaa3db43dbd290ff7" style="width: 100.0%; height: 100.0%;">►  Seongdong District‎ (3 C, 5 P)</div>')[0];
+                popup_a69b55b724e64bcd99feb62b6d5e1e32.setContent(html_9fbf390971c246fbaa3db43dbd290ff7);
+            
+
+            circle_marker_14ab445d0f06461fa03c8f75d15cf215.bindPopup(popup_a69b55b724e64bcd99feb62b6d5e1e32);
+
+            
+        
+    
+            var circle_marker_a13c07d207094555aa46d4f03a2ac161 = L.circleMarker(
+                [37.533330000000035,126.96667000000002],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_e66c4960bc1d4e8d9b5fea04492073ef);
+            
+    
+            var popup_adebafd62b0e43e1937a94579d76cc20 = L.popup({maxWidth: '300'});
+
+            
+                var html_b63341138ef341d4b29f4c229df1a24e = $('<div id="html_b63341138ef341d4b29f4c229df1a24e" style="width: 100.0%; height: 100.0%;">►  Songpa District‎ (4 C, 9 P)</div>')[0];
+                popup_adebafd62b0e43e1937a94579d76cc20.setContent(html_b63341138ef341d4b29f4c229df1a24e);
+            
+
+            circle_marker_a13c07d207094555aa46d4f03a2ac161.bindPopup(popup_adebafd62b0e43e1937a94579d76cc20);
+
+            
+        
+    
+            var circle_marker_09f31801614b4378a8f0eca02a338a19 = L.circleMarker(
+                [37.568260000000066,126.97783000000004],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_e66c4960bc1d4e8d9b5fea04492073ef);
+            
+    
+            var popup_2af4df51d50c412b8a9a7eeae3c980d9 = L.popup({maxWidth: '300'});
+
+            
+                var html_3082a36e826443adb4cc617b67c6fbe8 = $('<div id="html_3082a36e826443adb4cc617b67c6fbe8" style="width: 100.0%; height: 100.0%;">►  Yangcheon District‎ (3 C, 3 P, 1 F)</div>')[0];
+                popup_2af4df51d50c412b8a9a7eeae3c980d9.setContent(html_3082a36e826443adb4cc617b67c6fbe8);
+            
+
+            circle_marker_09f31801614b4378a8f0eca02a338a19.bindPopup(popup_2af4df51d50c412b8a9a7eeae3c980d9);
+
+            
+        
+</script>
